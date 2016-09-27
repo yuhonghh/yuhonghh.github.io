@@ -1,5 +1,19 @@
-.container{
-    background-color: greenyellow
-    
+.header{
+    background-color: palegoldenrod;
+ text-align:center;
+}
 
+.container{
+    background-color: whitesmoke;
+     height: 700px;
+}
+
+.sider{
+    background-color: lightgrey;
+    height: 700px;
+    text-align: center;
+    padding: 18px;
+}
+.title{
+    color:white;
 }
