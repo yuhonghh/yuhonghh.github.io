@@ -1,19 +1,36 @@
 .header{
-    background-color: palegoldenrod;
+    background-color: lightsteelblue;
  text-align:center;
 }
 
 .container{
     background-color: whitesmoke;
-     height: 700px;
+     height: 900px;
 }
 
 .sider{
-    background-color: lightgrey;
-    height: 700px;
+    background-color: whitesmoke;
+    height: 900px;
     text-align: center;
     padding: 18px;
 }
 .title{
     color:white;
+}
+.footer{
+    background-color:ghostwhite;
+text-align:center;
+height: 50px;
+}
+
+.element{
+    padding-bottom: 10px;
+    border-bottom: 10px;
+}
+
+.outline {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
