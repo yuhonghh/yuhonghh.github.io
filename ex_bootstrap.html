@@ -10,6 +10,36 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 <body>
+    <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Travel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Game</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+        </ul>
+        <div class="btn-group  pull-xs-right">
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action
+  </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="header">
         <h1 class="title">Traveling</h1>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -72,7 +102,16 @@
                 <div class="sider">
                     About Me<br><br>
                     <a class="btn btn-primary" href="http://www.google.com" target="_blank">Google</a><br><br>
-                    <button onclick="myfunction()" class="btn btn-outline-secondary">Baidu</button>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="inputPassword4">TEXT</label>
+                            <input type="text" id="input" class="form-control" aria-describedby="passwordHelpInline">
+                            <small id="passwordHelpInline" class="text-muted">
+                        </small>
+                        </div>
+                    </form>
+                    <button id="test" class="btn btn-outline-secondary">Baidu</button>
+                    <div id="output"></div>
                 </div>
             </div>
         </div>
@@ -90,4 +129,5 @@
         crossorigin="anonymous"></script>
     <script src="ex_js01.js"></script>
 </body>
+
 </html>

@@ -1,3 +1,6 @@
 function myfunction(){
-    console.log("hello");
+    var str = $("#input").val();
+    $("#output").text(str);
 }
+
+$("#test").bind('click',myfunction);
