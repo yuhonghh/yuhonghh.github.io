@@ -7,6 +7,10 @@
     background-color: white;
      height: 2000px;
 }
+.container.home{
+    background-color: white;
+     height: 800px;
+}
 
 .sider{
     background-color: #DBF5D3;
@@ -20,9 +24,12 @@
     background-color: #f5f5f5;
     border-radius: 10px;
     height: 2200px;
-.title{
-    color:white;
 }
+.sidebar-module.home {
+    padding: 16px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 800px;}
 .footer{
     background-color:ghostwhite;
 text-align:center;
