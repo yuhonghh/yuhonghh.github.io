@@ -31,7 +31,7 @@ function generateBlock(){
 	//随机产生0-6数组，代表7种形态。
 	var t = (Math.floor(Math.random()*20)+1)%7; 
 	switch(t){ 
-		case 0:{ 
+		case 0:{ //正方形
 			activeBlock[0] = {x:0, y:4}; 
 			activeBlock[1] = {x:1, y:4}; 
 			activeBlock[2] = {x:0, y:5}; 
@@ -39,42 +39,42 @@ function generateBlock(){
 
 			break; 
 		} 
-		case 1:{ 
+		case 1:{ //長條 ____
 			activeBlock[0] = {x:0, y:3}; 
 			activeBlock[1] = {x:0, y:4}; 
 			activeBlock[2] = {x:0, y:5}; 
 			activeBlock[3] = {x:0, y:6}; 
 			break; 
 		} 
-		case 2:{ 
+		case 2:{ //|-|
 			activeBlock[0] = {x:0, y:5}; 
 			activeBlock[1] = {x:1, y:4}; 
 			activeBlock[2] = {x:1, y:5}; 
 			activeBlock[3] = {x:2, y:4}; 
 			break; 
 		} 
-		case 3:{ 
+		case 3:{ //|-|
 			activeBlock[0] = {x:0, y:4}; 
 			activeBlock[1] = {x:1, y:4}; 
 			activeBlock[2] = {x:1, y:5}; 
 			activeBlock[3] = {x:2, y:5}; 
 			break; 
 		} 
-		case 4:{ 
+		case 4:{ //長條|____
 			activeBlock[0] = {x:0, y:4}; 
 			activeBlock[1] = {x:1, y:4}; 
 			activeBlock[2] = {x:1, y:5}; 
 			activeBlock[3] = {x:1, y:6}; 
 			break; 
 		} 
-		case 5:{ 
+		case 5:{ //L
 			activeBlock[0] = {x:0, y:4}; 
 			activeBlock[1] = {x:1, y:4}; 
 			activeBlock[2] = {x:2, y:4}; 
 			activeBlock[3] = {x:2, y:5}; 
 			break; 
 		} 
-		case 6:{ 
+		case 6:{ //_|_
 			activeBlock[0] = {x:0, y:5}; 
 			activeBlock[1] = {x:1, y:4}; 
 			activeBlock[2] = {x:1, y:5}; 

@@ -6,30 +6,30 @@ function myfunction(){
 $("#test").bind('click',myfunction);
 
 // 新增牌背影像
-function addPokerBackImg(index) {
+function addcard(index) {
     // 產生一張圖片
-    var $img = $('<img>');
+    var $card = $('<img>');
 
     // 設定 src 屬性
-    $img.attr('src', './IMG/IMG_back.JPG');
+    $card.attr('src', './IMG/IMG_card0.JPG');
     // 設定 class 樣式
-    $img.attr('class', 'img-thumbnail');
+    $card.attr('class', 'img-thumbnail');
 
     // 記錄 img 的編號
-    $img.attr('data-index', index);
+    $card.attr('data-index', index);
 
     // 將 img 插入至 id=output 內
-    $img.appendTo('#output');
+    $card.appendTo('#output');
 
 
     // 將 img 的 click 事件綁定
-    $img.bind('click', function() {
+    $card.bind('click', function() {
         // 取出 data-index 的屬性
         var index = $(this).attr('data-index');
         console.log('按到第' + index + '張');
 
 
-        $img.attr('src', './IMG/IMG_back' + index + '.JPG');
+        $card.attr('src', './IMG/IMG_card' + index + '.JPG');
     });
 
 }
@@ -37,12 +37,12 @@ function addPokerBackImg(index) {
 function Run() {
     console.log('run...');
 
-    $('img').remove();
+    $('card').remove();
 
-    var pokers = [1, 2, 3, 4];
+    var card = [1, 2, 3, 4];
 
     for (var i = 0; i < 4; i++) {
-        addPokerBackImg(pokers[i]);
+        addcard(card[i]);
     }
 
 }
