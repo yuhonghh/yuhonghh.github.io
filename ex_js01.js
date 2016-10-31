@@ -37,7 +37,7 @@ function addcard(index) {
 function Run() {
     console.log('run...');
 
-    $('card').remove();
+    $('#output img').remove();
 
     var card = [1, 2, 3, 4];
 
