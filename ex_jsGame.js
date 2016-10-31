@@ -1,6 +1,3 @@
-/** 
-* JS俄罗斯方块游戏 v 1.0
-*/ 
 //表示页面中的table, 这个table就是将要显示游戏的主面板 
 var tbl; 
 //游戏状态 0: 未开始;1 运行; 2 中止; 
@@ -84,7 +81,7 @@ function generateBlock(){
 	} 
 	//检查刚生产的四个小方格是否可以放在初始化的位置. 
 	for(var i=0; i<4; i++){ 
-		if(!isCellValid(activeBlock[i].x, activeBlock[i].y)){ 
+		if(!isCellValid(activeBlock[i].x, activeBlock[i].y)){     //if(area[x][y]==1){ return false; } 格子若被占据，isCellValid为false
 				return false; 
 			} 
 		} 
@@ -194,10 +191,10 @@ paint();
 //检查左边界,尝试着朝左边移动一个,看是否合法。
 function checkLeftBorder(){ 
 	for(var i=0; i<activeBlock.length; i++){ 
-		if(activeBlock[i].y==0){ 
+		if(activeBlock[i].y==0){  //y已经到边界
 			return false; 
 		} 
-		if(!isCellValid(activeBlock[i].x, activeBlock[i].y-1)){ 
+		if(!isCellValid(activeBlock[i].x, activeBlock[i].y-1)){ //格子若被占据，isCellValid为false
 			return false; 
 		} 
 	} 
@@ -206,10 +203,10 @@ function checkLeftBorder(){
 //检查右边界,尝试着朝右边移动一个,看是否合法。
 function checkRightBorder(){ 
 	for(var i=0; i<activeBlock.length; i++){ 
-		if(activeBlock[i].y==9){ 
+		if(activeBlock[i].y==9){ //y已经到边界
 			return false; 
 		} 
-		if(!isCellValid(activeBlock[i].x, activeBlock[i].y+1)){ 
+		if(!isCellValid(activeBlock[i].x, activeBlock[i].y+1)){ //格子若被占据，isCellValid为false
 			return false; 
 		} 
 	} 
@@ -218,10 +215,10 @@ function checkRightBorder(){
 //检查底边界,尝试着朝下边移动一个,看是否合法。
 function checkBottomBorder(){ 
 	for(var i=0; i<activeBlock.length; i++){ 
-		if(activeBlock[i].x==17){ 
+		if(activeBlock[i].x==17){  //触底
 			return false; 
 		} 
-		if(!isCellValid(activeBlock[i].x+1, activeBlock[i].y)){ 
+		if(!isCellValid(activeBlock[i].x+1, activeBlock[i].y)){ //碰到已经被占据的格子
 			return false; 
 		} 
 	} 
