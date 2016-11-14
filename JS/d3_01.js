@@ -9,6 +9,9 @@ var c3 = svgctrl.append('circle');
 var e1 = svgctrl.append('ellipse');
 var e2 = svgctrl.append('ellipse');
 var e3 = svgctrl.append('ellipse');
+var x =false;
+var y =false;
+var z =false;
 
 c1.attr('cx', 200).attr('cy', 220).attr('r', 100).attr('stroke', 'black').attr('stroke-width',4).attr('fill', 'black').attr('id','c1');
 p1.attr('points', '200,120 140,298 290,178 110,178 260,298').attr('fill', 'yellow').attr('stroke', 'yellow').attr('stroke-width',2).attr('fill-rule', 'nonzero').attr('id','p1');
@@ -26,7 +29,8 @@ function a(){
     //c1.remove();
     //c2.remove();
     //p1.remove();
-    //p2.remove();
+    //p2.remove();  
+if(x==false){    
     $('#c1').hide();
     $('#c2').hide();
     $('#p1').hide();
@@ -35,19 +39,25 @@ function a(){
   l1.attr('x1', 100).attr('y1', 220).attr('x2', 300).attr('y2', 220).attr('stroke', 'rgb(255,255,0)').attr('stroke-width',20).attr('id','l1');
   var l2 = svgctrl.append('line');
   l2.attr('x1', 400).attr('y1', 220).attr('x2', 600).attr('y2', 220).attr('stroke', 'rgb(255,255,0)').attr('stroke-width',20).attr('id','l2');
+  x =true;
+}
 }
 
 function b(){
+if(y==false){    
   e1.attr('fill', 'red');
   e2.attr('fill', 'green');
   e3.attr('fill', 'lightblue');
+  y =true;
 }
-
+}
 function c(){
+if(z==false){    
     $('#r2').hide();  
 var c3 = svgctrl.append('circle');
 c3.attr('cx', 350).attr('cy', 340).attr('r', 325).attr('stroke', 'grey').attr('stroke-width',4).attr('fill', 'none').attr('id','c3');
-
+    z=true;
+}
 }
 
 function d(){
@@ -62,4 +72,8 @@ function d(){
     e1.attr('fill', 'purple');
     e2.attr('fill', 'lime');
     e3.attr('fill', 'yellow');
+    x =false;
+    y =false;
+    z =false;
+   
 }
