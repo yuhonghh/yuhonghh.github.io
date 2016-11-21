@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Class1",
+            "program": "${workspaceRoot}/app.js",
+            "cwd": "${workspaceRoot}"
+        },  
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Class2",
+            "program": "${workspaceRoot}/app2.js",
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "http server",
+            "program": "${workspaceRoot}/http.js",
+            "cwd": "${workspaceRoot}"
+        },
+           {
+            "type": "node",
+            "request": "launch",
+            "name": "file",
+            "program": "${workspaceRoot}/file.js",
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "附加至處理序",
+            "port": 5858
+        }
+    ]
+}
